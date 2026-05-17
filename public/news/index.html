@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Insights | BaoAo Vacuum Flask Manufacturer</title>
+  <meta name="description" content="Latest news, industry insights, and product knowledge from Jiangmen BaoAo Hardware Appliances - Professional vacuum flask and airpot manufacturer.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    :root {
+      --text-primary: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --text-tertiary: #86868b;
+      --bg-white: #ffffff;
+      --bg-gray: #f5f5f7;
+      --bg-dark: #000000;
+      --blue: #0071e3;
+      --blue-hover: #0077ed;
+      --border-light: rgba(0,0,0,0.08);
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.06);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,0.08);
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 24px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-white);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    header .container { display: flex; align-items: center; justify-content: space-between; height: 52px; }
+
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-primary); }
+    .logo-name { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; }
+
+    nav { display: flex; gap: 28px; }
+    nav a { color: var(--text-secondary); text-decoration: none; font-size: 13px; font-weight: 400; transition: color 0.3s; }
+    nav a:hover { color: var(--text-primary); }
+    nav a.active { color: var(--blue); }
+
+    .lang-links { display: flex; gap: 4px; }
+    .lang-links a {
+      padding: 4px 10px; border-radius: 980px; font-size: 12px; font-weight: 500;
+      text-decoration: none; color: var(--text-secondary); transition: all 0.3s;
+      border: 1px solid transparent;
+    }
+    .lang-links a:hover { background: var(--bg-gray); }
+    .lang-links a.active { background: var(--text-primary); color: #fff; }
+
+    .hero {
+      min-height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: var(--bg-dark);
+      position: relative;
+      overflow: hidden;
+      padding: 120px 24px 60px;
+    }
+
+    .hero-gradient {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 40%, rgba(0,113,227,0.12) 0%, transparent 60%),
+                  linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.85) 100%);
+    }
+
+    .hero .container { position: relative; z-index: 2; }
+
+    .hero-eyebrow { font-size: 14px; font-weight: 600; color: var(--blue); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+
+    .hero-desc {
+      font-size: 18px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+      max-width: 600px;
+      margin: 0 auto;
+      font-weight: 300;
+    }
+
+    .news-section {
+      padding: 80px 0;
+      background: var(--bg-gray);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .news-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .news-card-content {
+      padding: 28px;
+    }
+
+    .news-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .news-category {
+      background: var(--blue);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 980px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .news-date {
+      font-size: 13px;
+      color: var(--text-tertiary);
+    }
+
+    .news-card-title {
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      letter-spacing: -0.2px;
+    }
+
+    .news-card-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .news-card-title a:hover {
+      color: var(--blue);
+    }
+
+    .news-card-summary {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .news-card-link {
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .news-card-link:hover {
+      text-decoration: underline;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+
+    .category-btn {
+      padding: 10px 24px;
+      border-radius: 980px;
+      background: var(--bg-white);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: inherit;
+      color: var(--text-secondary);
+      border: 1px solid var(--border-light);
+      letter-spacing: -0.1px;
+    }
+
+    .category-btn:hover {
+      background: var(--bg-gray);
+      border-color: var(--text-tertiary);
+    }
+
+    footer {
+      background: var(--bg-white);
+      padding: 48px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+    }
+
+    .footer-brand h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: -0.2px;
+    }
+
+    .footer-brand p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--text-tertiary);
+      letter-spacing: 0.3px;
+    }
+
+    .footer-col a {
+      display: block;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      margin-bottom: 8px;
+      transition: color 0.3s;
+    }
+
+    .footer-col a:hover {
+      color: var(--text-primary);
+    }
+
+    .footer-bottom {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-light);
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hero { padding: 100px 24px 40px; }
+      .news-section { padding: 60px 0; }
+      .news-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="../index.html" class="logo">
+      <div class="logo-name">BaoAo Vacuum Flask&Airpot Manufacturer</div>
+    </a>
+    <nav>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#products">Products</a>
+      <a href="../index.html#process">Process</a>
+      <a href="../index.html#quality">Quality</a>
+      <a href="index.html" class="active">News</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="lang-links">
+      <a href="../index.html" class="active">EN</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-gradient"></div>
+  <div class="container">
+    <p class="hero-eyebrow">News & Insights</p>
+    <h1>Industry Knowledge & Product Insights</h1>
+    <p class="hero-desc">Stay updated with the latest trends, technologies, and best practices in vacuum flask manufacturing from our factory experts.</p>
+  </div>
+</section>
+
+<section class="news-section">
+  <div class="container">
+    <div class="categories">
+      <button class="category-btn" onclick="filterNews('all')">All</button>
+      <button class="category-btn" onclick="filterNews('Industry')">Industry</button>
+      <button class="category-btn" onclick="filterNews('Technology')">Technology</button>
+      <button class="category-btn" onclick="filterNews('Usage')">Usage Guide</button>
+      <button class="category-btn" onclick="filterNews('Factory')">Factory</button>
+    </div>
+    <div class="news-grid" id="newsGrid">
+
+      <article class="news-card">
+        <div class="news-card-content">
+          <div class="news-card-meta">
+            <span class="news-category">Industry</span>
+            <span class="news-date">May 17, 2026</span>
+          </div>
+          <h2 class="news-card-title">
+            <a href="articles/understanding-food-grade-flask-safety-a-factorys-analysis.html">Understanding Food Grade Flask Safety: A Factory's Analysis</a>
+          </h2>
+          <p class="news-card-summary">As a professional manufacturer with over 14 years of experience in the vacuum flask industry, we've witnessed significant developments in food grade s...</p>
+          <a href="articles/understanding-food-grade-flask-safety-a-factorys-analysis.html" class="news-card-link">Read more →</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-content">
+          <div class="news-card-meta">
+            <span class="news-category">Technology</span>
+            <span class="news-date">May 17, 2026</span>
+          </div>
+          <h2 class="news-card-title">
+            <a href="articles/innovation-in-flask-manufacturing-process-what-manufacturers.html">Innovation in Flask Manufacturing Process: What Manufacturers Need to Know</a>
+          </h2>
+          <p class="news-card-summary">Technical innovation drives our manufacturing process at Jiangmen BaoAo Hardware Appliances. With vacuum flask manufacturing process becoming increasi...</p>
+          <a href="articles/innovation-in-flask-manufacturing-process-what-manufacturers.html" class="news-card-link">Read more →</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-content">
+          <div class="news-card-meta">
+            <span class="news-category">Usage</span>
+            <span class="news-date">May 17, 2026</span>
+          </div>
+          <h2 class="news-card-title">
+            <a href="articles/getting-the-most-from-your-flask-technology-expert-tips.html">Getting the Most from Your Flask Technology: Expert Tips</a>
+          </h2>
+          <p class="news-card-summary">As manufacturers of premium vacuum flasks and airpots, we understand what makes a quality product. Here's our expert guidance on stainless steel vacuu...</p>
+          <a href="articles/getting-the-most-from-your-flask-technology-expert-tips.html" class="news-card-link">Read more →</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-content">
+          <div class="news-card-meta">
+            <span class="news-category">Factory</span>
+            <span class="news-date">May 17, 2026</span>
+          </div>
+          <h2 class="news-card-title">
+            <a href="articles/from-raw-material-to-flask-cleaning-and-maintenance-our-prod.html">From Raw Material to Flask Cleaning And Maintenance: Our Production Journey</a>
+          </h2>
+          <p class="news-card-summary">Located in Pengjiang District, Jiangmen City, Guangdong Province, our factory has been producing premium vacuum flasks and airpots for over 14 years. ...</p>
+          <a href="articles/from-raw-material-to-flask-cleaning-and-maintenance-our-prod.html" class="news-card-link">Read more →</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-content">
+          <div class="news-card-meta">
+            <span class="news-category">Industry</span>
+            <span class="news-date">May 17, 2026</span>
+          </div>
+          <h2 class="news-card-title">
+            <a href="articles/the-future-of-coffee-pot-retention-technology-industry-insig.html">The Future of Coffee Pot Retention Technology: Industry Insights from a Manufacturer's Perspective</a>
+          </h2>
+          <p class="news-card-summary">As a professional manufacturer with over 14 years of experience in the vacuum flask industry, we've witnessed significant developments in coffee pot t...</p>
+          <a href="articles/the-future-of-coffee-pot-retention-technology-industry-insig.html" class="news-card-link">Read more →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Jiangmen BaoAo Hardware Appliances Manufactor</h3>
+        <p>Add: Chuang Yi Xin Wu Jin Chang Xi Bei (Jiang Du Dong Lu Bei), Peng Jiang Qu, Guang Dong Sheng, China</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product Series</h4>
+        <a href="../index.html#products">Airpot</a>
+        <a href="../index.html#products">Vacuum Jug</a>
+        <a href="../index.html#products">Coffee Pot</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="../index.html#about">OEM/ODM Service</a>
+        <a href="../index.html#about">ODM Custom Design</a>
+        <a href="../index.html#about">Stock Wholesale</a>
+        <a href="../index.html#designs">Custom Patterns</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Jiangmen BaoAo Hardware Appliances Manufactor. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  function filterNews(category) {
+    const cards = document.querySelectorAll('.news-card');
+    cards.forEach(card => {
+      const cardCategory = card.querySelector('.news-category').textContent;
+      if (category === 'all' || cardCategory === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
